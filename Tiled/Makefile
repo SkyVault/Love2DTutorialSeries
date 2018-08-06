@@ -1,0 +1,5 @@
+run:
+	love .
+
+build:
+	love .
