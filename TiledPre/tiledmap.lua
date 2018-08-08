@@ -8,14 +8,15 @@ function loadTiledMap(path)
     map.tileset = tileset
     map.image = love.graphics.newImage(tileset.image)
 
+    map.frame = 0
+    map.timer = 0
+    map.maxTimer = 0.1
+
     map.animatedTiles = {}
-    for i, tile in ipairs(tileset.tiles) do
+
+    for i, tile in ipairs(map.tileset.tiles) do
         map.animatedTiles[tile.id] = tile
     end
-
-    map.frame = 0
-    map.timer = 0.0
-    map.maxTimer = 0.1
 
     for y = 0, (tileset.imageheight / tileset.tileheight) - 1 do
         for x = 0, (tileset.imagewidth / tileset.tilewidth) - 1 do
@@ -32,16 +33,15 @@ function loadTiledMap(path)
     end
 
     function map:update(dt)
-        if self.timer > self.maxTimer then 
-            self.frame = self.frame + 1
+        if self.timer >= self.maxTimer then
+            self.frame = self.frame + 1 
             self.timer = 0
         end
-        
-        self.timer = self.timer + dt
-        print(self.frame)
+        self.timer = self.timer + dt 
     end
 
     function map:draw()
+
         for i, layer in ipairs(self.layers) do
             for y = 0, layer.height - 1 do
                 for x = 0, layer.width - 1 do
@@ -49,13 +49,10 @@ function loadTiledMap(path)
                     local tid = layer.data[index]
 
                     if tid ~= 0 then
-
                         if self.animatedTiles[tid - 1] ~= nil then
-                            
                             local anim = self.animatedTiles[tid - 1].animation
                             local numFrames = #anim
                             local index = self.frame % numFrames
-
                             tid = anim[index + 1].tileid + 1
                         end
 
