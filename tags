@@ -4,6 +4,11 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+Const	Rpg/Main/utilities.lua	/^function Const(tab)$/;"	f
+Copy	Rpg/Main/utilities.lua	/^function Copy(orig)$/;"	f
+__index 	Rpg/Main/utilities.lua	/^        __index = function(o, key) $/;"	f
+__newindex 	Rpg/Main/utilities.lua	/^        __newindex = function(o, key, value)$/;"	f
+add	Rpg/Main/gameloop.lua	/^function add(object)$/;"	f
 add	Rpg/Main/renderer.lua	/^function add(object, layer)$/;"	f
 draw	Rpg/Main/renderer.lua	/^function draw()$/;"	f
 loadTiledMap	Tiled/tiledmap.lua	/^function loadTiledMap(path)$/;"	f
@@ -23,6 +28,7 @@ love.load	Shaders/Part2/main.lua	/^function love.load()$/;"	f
 love.load	Shaders/Part2Final/main.lua	/^function love.load()$/;"	f
 love.load	Tiled/main.lua	/^function love.load()$/;"	f
 love.load	TiledPre/main.lua	/^function love.load()$/;"	f
+love.update	Rpg/Main/main.lua	/^function love.update(dt) $/;"	f
 love.update	Shaders/Part2/main.lua	/^function love.update(dt)$/;"	f
 love.update	Shaders/Part2Final/main.lua	/^function love.update(dt)$/;"	f
 love.update	Tiled/main.lua	/^function love.update(dt)$/;"	f
@@ -31,4 +37,6 @@ map:draw	Tiled/tiledmap.lua	/^    function map:draw()$/;"	f
 map:draw	TiledPre/tiledmap.lua	/^    function map:draw()$/;"	f
 map:update	Tiled/tiledmap.lua	/^    function map:update(dt)$/;"	f
 map:update	TiledPre/tiledmap.lua	/^    function map:update(dt)$/;"	f
+remove	Rpg/Main/gameloop.lua	/^function remove(object)$/;"	f
 remove	Rpg/Main/renderer.lua	/^function remove(object)$/;"	f
+update	Rpg/Main/gameloop.lua	/^function update(dt)$/;"	f

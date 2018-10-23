@@ -1,5 +1,7 @@
 local renderers = {}
 
+-- Add object to the rendering list, attach a new
+-- variable "drawLayer" to determine the draw layer
 local
 function add(object, layer)
     assert(object.draw, "Renderer::Add:: object requires a draw function")
