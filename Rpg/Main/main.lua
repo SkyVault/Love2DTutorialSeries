@@ -1,3 +1,12 @@
+local Renderer = require "renderer"
+
+Game = {
+    Renderer = Renderer
+}
+
+function love.load()
+end
+
 function love.draw()
-    love.graphics.rectangle("fill", 0, 0, 100, 100)
+    Renderer.draw()
 end
