@@ -4,39 +4,56 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+Const	Rpg/EP1/utilities.lua	/^function Const(tab)$/;"	f
 Const	Rpg/Main/utilities.lua	/^function Const(tab)$/;"	f
+Copy	Rpg/EP1/utilities.lua	/^function Copy(orig)$/;"	f
 Copy	Rpg/Main/utilities.lua	/^function Copy(orig)$/;"	f
+__index 	Rpg/EP1/utilities.lua	/^        __index = function(o, key) $/;"	f
 __index 	Rpg/Main/utilities.lua	/^        __index = function(o, key) $/;"	f
+__newindex 	Rpg/EP1/utilities.lua	/^        __newindex = function(o, key, value)$/;"	f
 __newindex 	Rpg/Main/utilities.lua	/^        __newindex = function(o, key, value)$/;"	f
+add	Rpg/EP1/gameloop.lua	/^function add(object)$/;"	f
+add	Rpg/EP1/renderer.lua	/^function add(object, layer)$/;"	f
 add	Rpg/Main/gameloop.lua	/^function add(object)$/;"	f
 add	Rpg/Main/renderer.lua	/^function add(object, layer)$/;"	f
+draw	Rpg/EP1/renderer.lua	/^function draw()$/;"	f
 draw	Rpg/Main/renderer.lua	/^function draw()$/;"	f
+loadTiledMap	Rpg/Main/tiledmap.lua	/^function loadTiledMap(path)$/;"	f
 loadTiledMap	Tiled/tiledmap.lua	/^function loadTiledMap(path)$/;"	f
 loadTiledMap	TiledPre/tiledmap.lua	/^function loadTiledMap(path)$/;"	f
+love.conf	Rpg/EP1/conf.lua	/^function love.conf(t)$/;"	f
 love.conf	Rpg/Main/conf.lua	/^function love.conf(t)$/;"	f
 love.conf	Shaders/Part2/conf.lua	/^function love.conf(t)$/;"	f
 love.conf	Shaders/Part2Final/conf.lua	/^function love.conf(t)$/;"	f
 love.conf	Tiled/conf.lua	/^function love.conf(t)$/;"	f
 love.conf	TiledPre/conf.lua	/^function love.conf(t)$/;"	f
+love.draw	Rpg/EP1/main.lua	/^function love.draw()$/;"	f
 love.draw	Rpg/Main/main.lua	/^function love.draw()$/;"	f
 love.draw	Shaders/Part2/main.lua	/^function love.draw()$/;"	f
 love.draw	Shaders/Part2Final/main.lua	/^function love.draw()$/;"	f
 love.draw	Tiled/main.lua	/^function love.draw()$/;"	f
 love.draw	TiledPre/main.lua	/^function love.draw()$/;"	f
+love.load	Rpg/EP1/main.lua	/^function love.load()$/;"	f
 love.load	Rpg/Main/main.lua	/^function love.load()$/;"	f
 love.load	Shaders/Part2/main.lua	/^function love.load()$/;"	f
 love.load	Shaders/Part2Final/main.lua	/^function love.load()$/;"	f
 love.load	Tiled/main.lua	/^function love.load()$/;"	f
 love.load	TiledPre/main.lua	/^function love.load()$/;"	f
+love.update	Rpg/EP1/main.lua	/^function love.update(dt) $/;"	f
 love.update	Rpg/Main/main.lua	/^function love.update(dt) $/;"	f
 love.update	Shaders/Part2/main.lua	/^function love.update(dt)$/;"	f
 love.update	Shaders/Part2Final/main.lua	/^function love.update(dt)$/;"	f
 love.update	Tiled/main.lua	/^function love.update(dt)$/;"	f
 love.update	TiledPre/main.lua	/^function love.update(dt)$/;"	f
+map:draw	Rpg/Main/tiledmap.lua	/^    function map:draw()$/;"	f
 map:draw	Tiled/tiledmap.lua	/^    function map:draw()$/;"	f
 map:draw	TiledPre/tiledmap.lua	/^    function map:draw()$/;"	f
+map:update	Rpg/Main/tiledmap.lua	/^    function map:update(dt)$/;"	f
 map:update	Tiled/tiledmap.lua	/^    function map:update(dt)$/;"	f
 map:update	TiledPre/tiledmap.lua	/^    function map:update(dt)$/;"	f
+remove	Rpg/EP1/gameloop.lua	/^function remove(object)$/;"	f
+remove	Rpg/EP1/renderer.lua	/^function remove(object)$/;"	f
 remove	Rpg/Main/gameloop.lua	/^function remove(object)$/;"	f
 remove	Rpg/Main/renderer.lua	/^function remove(object)$/;"	f
+update	Rpg/EP1/gameloop.lua	/^function update(dt)$/;"	f
 update	Rpg/Main/gameloop.lua	/^function update(dt)$/;"	f

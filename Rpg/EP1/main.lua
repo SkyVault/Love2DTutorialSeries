@@ -1,8 +1,6 @@
 local Renderer = require "renderer"
 local GameLoop = require "gameloop"
-
 require "utilities"
-require "tiledmap"
 
 local time = {
     dt = 0.0,
@@ -24,9 +22,6 @@ Game = {
 }
  
 function love.load()
-    local map = loadTiledMap "assets/map1"
-    Renderer.add(map)
-    GameLoop.add(map)
 end
 
 function love.update(dt) 
@@ -37,7 +32,7 @@ function love.update(dt)
 
     Game.Time = Copy(time)
 
-    GameLoop.update(dt)
+    GameLoop:update(dt)
 end
 
 function love.draw()
