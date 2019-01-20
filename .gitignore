@@ -39,4 +39,6 @@ luac.out
 *.x86_64
 *.hex
 
-*tags*
+tags*
+Rpg/tags
+*/tags
